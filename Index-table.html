@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index-table</title>
+    <style>
+        .Outside-border{
+
+            border: 2px solid rgb(140 140 140);
+
+        }
+        th, td {
+
+            border: 1px solid rgb(160, 160, 160);
+
+        }
+        #Joined{
+                background-color: rgba(0, 255, 00, 0.205);
+        }
+        #Canceled{
+            background-color: rgba(252, 0, 0, 0.301);
+        }
+        #table-data-1{
+            border-collapse: collapse;
+            border-color: #000;
+
+        }
+    </style>
+    
 </head>
 <body>
-    <table border="n">
+    <!-- HTML5 Table
+    • It is used to display data in tabular form
+    • It contains rows and columns
+    • Elements used for creating table
+        ○ <table> </table>
+        ○ <tr> </tr> - Defines table rows
+        ○ <td> </td> - Defines table data
+        ○ <th> </th> - Defines table header
+    • Other elements :
+        ○ <thead> </thead> - Used to group header content in table 
+        ○ <tbody> </tbody> - used to group body content in table 
+        ○ <tfoot> </tfoot> - Used to group footer content in table
+        ○ <caption> </caption> - Defines table caption 
+        ○ <colgroup> </colgroup> - Apply formatting for group of one or more columns
+        ○ <col> - used with colgroup elements. Specifies column properties for each column  -->
+
+    <table>
         <tr><th> SR.</th> <th> name</h> <th> father's name</th> <th> Mother's name</th><th> phone No.</th></tr>
         <tr><td> 1</td> <td> Bhupendra kumar</td> <td>MR. Ram Milan</td> <td> MRS. Sonam</td> <td>+91 8936257614</td></tr>
         <tr><td> 2</td> <td> Rahul</td> <td> MR. Ram Milan</td> <td> MRS. Kavit</td> <td>+91 9513264825</td></tr>
@@ -19,9 +59,165 @@
         <tr><td> 9</td> <td> Sona</td> <td> MR. Rahul Kumar</td> <td> MRS. Rita</td> <td>+91 7859364512</td></tr>
         <tr><td> 10</td> <td> kavit</td> <td>MR.  Raja</td> <td> MRS. Ritu</td> <td>+91 9878563545</td></tr>
     </table>
-    
+    <br>
+    <Table>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Member Since</th>
+            <th>Balance</th>
+        </tr>
+        <tr>
+            <th>Margaret Nguyen</th>
+            <td> 427311</td>
+            <td>June 3, 2010</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <th>Edvard Galinski</th>
+            <td> 533175</td>
+            <td>January 13, 2011</td>
+            <td>37.00</td>
+        </tr>
+        <tr>
+            <th>Hoshi Nakamura</th>
+            <td> 601942</td>
+            <td>July 23, 2012</td>
+            <td>15.00</td>
+        </tr>
 
+    </Table>
+<br>
 
+    <Table class="Outside-border">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th>ID</th>
+            <th>Member Since</th>
+            <th rowspan="2">Balance</th>
+        </tr>
+        <tr>
+            <th>Joined</th>
+            <th>Canceled</th>
+        </tr>
+        <tr>
+            <th>Margaret Nguyen</th>
+            <td> 427311</td>
+            <td>June 3, 2010</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <th>Edvard Galinski</th>
+            <td> 533175</td>
+            <td>January 13, 2011</td>
+            <td>37.00</td>
+        </tr>
+        <tr>
+            <th>Hoshi Nakamura</th>
+            <td> 601942</td>
+            <td>July 23, 2012</td>
+            <td>15.00</td>
+        </tr>
 
+    </Table>
+    <br>
+    <Table class="Outside-border">
+        <caption> Status of the Club members 2021</caption>
+       <thead> <tr>
+            <th rowspan="2">Name</th>
+            <td rowspan="2">ID</th>
+            <th colspan="2">Member Since</th>
+            <th rowspan="2">Balance</th>
+        </tr>
+        <tr>
+            <th id="Joined">Joined</th>
+            <th id="Canceled">Canceled</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Margaret Nguyen</th>
+            <td> 427311</td>
+            <td>June 3, 2010</td>
+            <td> n/a</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <th>Edvard Galinski</th>
+            <td> 533175</td>
+            <td>January 13, 2011</td>
+            <td> April 8, 2017</td>
+            <td>37.00</td>
+        </tr>
+        <tr>
+            <th>Hoshi Nakamura</th>
+            <td> 601942</td>
+            <td>July 23, 2012</td>
+            <td> n/a</td>
+            <td>15.00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row" colspan="4"> Total balance</th>
+            <th><u>52.00</u></th>
+        </tr>
+    </tfoot>
+
+    </Table>
+    <P> 1. The following data were collected by a group of students as they tested four different type of plastics.</P>
+    <table id="table-data-1">
+        <thead>
+            <tr>
+                <th>Plastic</th>
+                <th>Acetone</th>
+                <th>Flame test</th>
+                <th>Heat</th>
+                <th>Crease color</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>No effect</td>
+                <td>Green color</td>
+                <td>Softens</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Softens</td>
+                <td>No change</td>
+                <td>No change</td>
+                <td>White</td>
+            </tr>
+            <tr></tr>
+                <td>3</td>
+                <td>No effect</td>
+                <td>Red color</td>
+                <td>Softens</td>
+                <td>None</td>
+            </tr>
+            <tr></tr>
+                <td>4</td>
+                <td>No effect</td>
+                <td>Green color</td>
+                <td>Softens</td>
+                <td>None</td>
+            </tr>
+        </tbody>
+        </thead>
+    </table>
+   
+    <P> Which plastic would be unsafe to use to store products that contain acetone ?</P>
+
+    <ol type="a">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+    <br>
+   
 </body>
 </html>

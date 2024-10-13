@@ -1,0 +1,34 @@
+    /* Use in pseudo-class for link */
+    a:link{
+        background-color: red;
+        color: #fff;
+        /* Color of text for hyperlinks when selected  */
+        /* This link is for those who have not opened it. */
+    }
+    a:hover{
+        background-color: #20e705;
+        color: orange;
+        /* The :hover pseudo-class is used to select elements when you mouse over them.  */
+    }
+    a:visited{
+        background-color: palevioletred;
+        color: brown
+        /* Color of text for visited hypertext links */
+        /* The :visited pseudo-class is used to style visited links. */
+    }
+    a:active{
+        background-color: plum;
+        color: red;
+        /* The ::active pseudo-class is used to select and style an elements that is being actived by the user. */
+    }
+    p{
+        color:blue;
+    }
+    body{
+        background-color: bisque;
+       /* The background-color property sets the background color of an element. */
+        background-image: url(https://www.baltana.com/files/wallpapers-10/Fire%20Love%20Wallpaper.jpg);
+        /* The background-image property sets one or more background images for an element. */
+        background-position: top;
+        /* background-position: bottom; */
+    }
